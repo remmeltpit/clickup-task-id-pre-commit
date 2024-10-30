@@ -1,0 +1,8 @@
+- id: check-for-clickup-task-id
+  name: Clickup task ID checker
+  description: Check for Clickup task ID in commit message title
+  entry: check.sh
+  language: script
+  stages: [ commit-msg ]
+  pass_filenames: false
+  args: [ 'BUG', 'DE', 'DEVEX' ]
